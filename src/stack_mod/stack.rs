@@ -14,7 +14,7 @@ impl Stack {
     }
 
     pub fn push(&mut self, item: i32) {
-        if (self.is_full()) {
+        if self.is_full() {
             println!("{}", "The stack is full");
             return;
         }
@@ -24,7 +24,7 @@ impl Stack {
     }
 
     pub fn pop(&mut self) -> i32 {
-        if (self.is_empty()) {
+        if self.is_empty() {
             println!("{}", "The stack is empty. Nothing to remove.");
             return 0;
         }
